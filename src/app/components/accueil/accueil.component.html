@@ -1,1 +1,10 @@
-<p>COUCOU</p>
+<div class="row">
+    <h1>Prochainement en librairie !</h1>
+</div>
+<div class="container d-flex flex-column justify-content-between align-items-center">
+    <a class="text-decoration-none" routerLink="/books/{{ oeuvres[oeuvres.length-1].id }}">
+        <img src="{{ oeuvres[oeuvres.length-1].image }}" alt="Image de {{ oeuvres[oeuvres.length-1].title }}" class="shadow">
+    </a>
+    <h2>{{ oeuvres[oeuvres.length-1].title }}</h2>
+    <p>{{ oeuvres[oeuvres.length-1].synopsis }}</p>
+</div>

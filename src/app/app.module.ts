@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { AProposComponent } from './components/a-propos/a-propos.component';
-import { OeuvresComponent } from './components/oeuvres/oeuvres.component';
-import { OeuvreComponent } from './components/oeuvre/oeuvre.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -15,12 +14,11 @@ import { OeuvreComponent } from './components/oeuvre/oeuvre.component';
     NavComponent,
     AccueilComponent,
     AProposComponent,
-    OeuvresComponent,
-    OeuvreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

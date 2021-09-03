@@ -1,0 +1,12 @@
+<div class="row">
+    <h1>Ma vie, mon œuvre</h1>
+</div>
+<div class="row">
+    <div class="col-4 text-center" *ngFor="let oeuvre of oeuvres">
+        <a class="text-decoration-none" routerLink="/books/{{ oeuvre.id }}">
+            <img src="{{ oeuvre.image }}" alt="Image de {{ oeuvre.title }}" class="shadow">
+        </a>
+        <h2>{{ oeuvre.title }}</h2>
+        <p>{{ oeuvre.synopsis }}</p>
+    </div>
+</div>
