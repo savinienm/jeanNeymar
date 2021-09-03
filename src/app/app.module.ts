@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { AProposComponent } from './components/a-propos/a-propos.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
